@@ -76,7 +76,8 @@ class CategoryController extends \Api\Controller
         // sortable
         $sort_options = [
             'created'  => 'created',
-            'price'    => 'price_min'
+            'price'    => 'price_min',
+            'name'     => 'name'
         ];
         if(module_exists('product-stat'))
         	$sort_options['stat'] = 'stat';
